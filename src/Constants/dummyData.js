@@ -358,6 +358,32 @@ const weOffer = [
   },
 ];
 
+const foodItemFeatures = [
+  {
+    id: 1,
+    label: "Coupon",
+    icon: "gift",
+  },
+  {
+    id: 2,
+    label: "Trusted",
+    icon: "Safety",
+  },
+
+  {
+    id: 3,
+    label: "30 min",
+    icon: "dashboard",
+  },
+];
+
+const sizes = [
+  { id: 1, label: `12"` },
+  { id: 2, label: `14"` },
+  { id: 3, label: `16"` },
+  { id: 4, label: `18"` },
+];
+
 export default {
   slides,
   categories,
@@ -367,4 +393,6 @@ export default {
   tags,
   ourFeatures,
   weOffer,
+  foodItemFeatures,
+  sizes,
 };

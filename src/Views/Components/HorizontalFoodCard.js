@@ -7,9 +7,9 @@ import { Octicons } from "@expo/vector-icons";
 // Constants
 import COLORS from "../../Constants/colors";
 
-const HorizontalFoodCard = ({ containerStyle, imageStyle, item }) => {
+const HorizontalFoodCard = ({ containerStyle, imageStyle, item, onPress }) => {
   return (
-    <TouchableOpacity style={containerStyle}>
+    <TouchableOpacity style={containerStyle} onPress={onPress}>
       {/* Image */}
       <Image
         source={{ uri: item.image.toString() }}

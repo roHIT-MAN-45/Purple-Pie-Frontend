@@ -9,7 +9,10 @@ import COLORS from "../../Constants/colors";
 
 const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
   return (
-    <TouchableOpacity style={[styles.verticalContainer, { ...containerStyle }]}>
+    <TouchableOpacity
+      style={[styles.verticalContainer, { ...containerStyle }]}
+      onPress={onPress}
+    >
       {/* Calories and Favourites */}
       <View style={{ flexDirection: "row" }}>
         {/* Calories */}

@@ -34,7 +34,7 @@ import dummyData from "../../../Constants/dummyData";
 // Dimensions
 const { width, height } = Dimensions.get("window");
 
-const SearchScreen = () => {
+const SearchScreen = ({ navigation }) => {
   // Can't manipulate menu state because currently storing all items init ⚡
   const [menu, setMenu] = useState([]);
 
@@ -208,7 +208,7 @@ const SearchScreen = () => {
                   backgroundColor: COLORS.white,
                 }}
                 item={item}
-                onPress={() => console.log("VerticalFoodCard")}
+                onPress={() => navigation.navigate("Order", { foodItem: item })}
               />
             );
           }}
@@ -255,7 +255,7 @@ const SearchScreen = () => {
                 }}
                 imageStyle={{ height: 120, width: 120, margin: 10 }}
                 item={item}
-                onPress={() => console.log("HorizontalFoodCard")}
+                onPress={() => navigation.navigate("Order", { foodItem: item })}
               />
             );
           }}
@@ -368,7 +368,7 @@ const SearchScreen = () => {
                 width: 90,
               }}
               item={item}
-              onPress={() => console.log("HorizontalFoodCard Pressed")}
+              onPress={() => navigation.navigate("Order", { foodItem: item })}
             />
           );
         }}

@@ -77,7 +77,7 @@ const Aboutme = () => {
             <View style={{ flexBasis: "85%" }}>
               <Text style={styles.name}>Rohit Sunil Chavan</Text>
               <Text style={styles.position}>
-                React Native Expo | Android & IOS | Full Stack DEV
+                React Native | Android & IOS | Full Stack Developer
               </Text>
             </View>
 

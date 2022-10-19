@@ -8,10 +8,14 @@ import Feathericons from "@expo/vector-icons/Feather";
 // Constants
 import COLORS from "../../Constants/colors";
 
-const Top = () => {
+const Top = ({ onBackPress }) => {
   return (
     <SafeAreaView style={styles.top}>
-      <Ionicons name="arrow-back-sharp" style={styles.icon} />
+      <Ionicons
+        name="arrow-back-sharp"
+        style={styles.icon}
+        onPress={onBackPress}
+      />
       <Feathericons name="more-vertical" style={styles.icon} />
     </SafeAreaView>
   );

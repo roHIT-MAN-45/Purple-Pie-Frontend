@@ -13,6 +13,7 @@ import LoginScreen from "./src/Views/Screens/LoginScreen.js";
 import SignupScreen from "./src/Views/Screens/SignupScreen.js";
 import FeatureScreen from "./src/Views/Screens/FeatureScreen/FeatureScreen.js";
 import OnboardScreen from "./src/Views/Screens/OnboardScreen/Onboard.js";
+import OrderScreen from "./src/Views/Screens/OrderScreen/OrderScreen.js";
 
 // font
 import {
@@ -81,6 +82,7 @@ export default function App() {
         <Stack.Screen name="Signup" component={SignupScreen} />
         <Stack.Screen name="Feature" component={FeatureScreen} />
         <Stack.Screen name="Onboard" component={OnboardScreen} />
+        <Stack.Screen name="Order" component={OrderScreen} />
 
         {/* Tabs */}
         <Stack.Screen name="Tabs" component={Tabs} />
